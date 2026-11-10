@@ -1,0 +1,7 @@
+LIVRINHO ROSA — como abrir
+1. Extraia o arquivo ZIP.
+2. Abra a pasta livrinho_rosa.
+3. Dê dois cliques em index.html para abrir no navegador.
+4. O menu agora inclui as áreas “Poemas” e “Livro para minha amada e querida Milena”.
+5. Para publicar e enviar um link, envie a pasta inteira para um serviço de hospedagem estática, como GitHub Pages ou Netlify.
+As fotos dos bichinhos e o fundo rosa estão na pasta assets. Não apague essa pasta.

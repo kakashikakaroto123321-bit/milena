@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f7b6d2">
+<title>Para minha amada Milena ♡</title>
+<style>
+:root{--pink:#f7a9ca;--deep:#a83e70;--pale:#fff3f8;--paper:#fffafd;--ink:#71334f}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:Georgia,'Trebuchet MS',serif;background:linear-gradient(#fce5f0d9,#ffeef6e8),url('assets/fundo-rosa.jpg') center/cover fixed;min-height:100vh}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1120px;margin:auto;padding:22px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;background:#fff8fbdc;border:1px solid #f4b5d0;border-radius:22px;box-shadow:0 8px 25px #b84b7920}
+.brand{font-size:1.1rem;font-weight:bold;color:var(--deep)}.tiny{font-size:.9rem;color:#8a3d62}
+.hero{text-align:center;padding:42px 18px 28px}
+.kicker{letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;color:#a74e79}
+h1{font-size:clamp(2.3rem,7vw,4.5rem);line-height:1.05;margin:12px 0;color:#bd4d83;text-shadow:2px 3px #fff}
+.hero p{font-size:1.1rem;max-width:620px;margin:12px auto;line-height:1.6}
+.pill{border:1px solid #eea5c5;background:#fff7fb;color:#a83e70;border-radius:999px;padding:10px 17px}
+.primary{background:linear-gradient(135deg,#ed8fba,#d85e99);color:white;border:0;border-radius:999px;padding:12px 22px;box-shadow:0 5px 14px #bd4d8333}
+.layout{display:grid;grid-template-columns:220px 1fr;gap:20px;align-items:start}
+.side,.main{background:#fff9fcdf;border:1px solid #f2b2ce;border-radius:24px;padding:18px;box-shadow:0 10px 28px #9c3d6820}
+.side h3{margin:0 0 12px;color:#b84c80}
+.side button{display:block;width:100%;text-align:left;margin:7px 0;padding:10px 12px;border:0;border-radius:13px;background:#ffedf5;color:#914064}
+.side button.active,.side button:hover{background:#f8c1d9}
+.side .note{font-size:.9rem;line-height:1.55;background:#fff3f8;border-radius:15px;padding:12px;margin-top:16px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:2px 0 16px}
+.section-head h2{margin:0;color:#a83e70;font-size:1.55rem}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{border:1px solid #efb0ca;border-radius:17px;overflow:hidden;background:#fffafd;box-shadow:0 5px 14px #b94f7a17;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 9px 20px #b94f7a2a}
+.art{height:118px;display:flex;align-items:center;justify-content:center;font-size:3.2rem;background:radial-gradient(circle at 30% 20%,#fff,#fbd4e5 65%,#f6b2d0);position:relative}
+.art:after{content:'♡';position:absolute;right:10px;top:5px;color:#df77a5;font-size:1.4rem}
+.art img{width:100%;height:100%;object-fit:cover}
+.card-label{padding:10px 8px;text-align:center;font-size:.92rem;font-weight:bold}
+.card button{border:0;background:transparent;color:inherit;width:100%;padding:0}
+.card small{display:block;font-weight:normal;color:#a65b7c;margin-top:4px}
+.footer{margin:20px 0 4px;text-align:center;background:#fff8fbdf;border:1px solid #f2b2ce;border-radius:22px;padding:24px}
+.footer strong{display:block;font-size:1.7rem;color:#b84c80;margin:7px}
+.modal{position:fixed;inset:0;background:#54253d99;display:none;align-items:center;justify-content:center;padding:18px;z-index:5}
+.modal.open{display:flex}
+.dialog{max-width:540px;width:100%;background:#fff9fc;border:2px solid #f1a8c7;border-radius:25px;padding:22px;text-align:center;box-shadow:0 20px 60px #45162f55;position:relative}
+.dialog .big{font-size:4rem;margin:8px}
+.dialog h2{color:#b84c80;margin:8px}
+.dialog p{line-height:1.65}
+.dialog img{max-width:100%;max-height:260px;object-fit:contain;border-radius:15px}
+.close{position:absolute;right:14px;top:10px;border:0;background:#fbe0ec;border-radius:50%;width:34px;height:34px;color:#9c3e6a}
+.navrow{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.side{order:2}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){.wrap{padding:12px}.hero{padding:30px 8px 20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.art{height:105px}.top{padding:12px}.side{display:none}.section-head{align-items:center}.section-head h2{font-size:1.25rem}}
+.mnav{display:none}html{scroll-behavior:smooth}
+@media(max-width:560px){body{padding-bottom:70px}.mnav{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:4;justify-content:space-around;padding:8px 6px calc(8px + env(safe-area-inset-bottom,0px));background:#fff8fbf2;border-top:1px solid #f2b2ce}.mnav a{color:#914064;text-decoration:none;font-size:.78rem;text-align:center;padding:4px 8px}.mnav a span{display:block;font-size:1.2rem}}
+.pg{display:none}.pg.l p{text-align:left;font-size:1.02rem;line-height:1.85;margin:.7em 0}.pg.on{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><div class="brand">♡ Um cantinho feito com carinho</div><div class="tiny">feito especialmente para você 🎀</div></header>
+  <section class="hero">
+    <div class="kicker">um pequeno presente digital</div>
+    <h1>20 coisinhas que fazem você ser você ♡</h1>
+    <p>Um livrinho rosa, cheio de detalhes e lembranças das coisas que você gosta. Cada quadradinho guarda um pedacinho do seu mundo.</p>
+    <button class="primary" onclick="document.getElementById('gostos').scrollIntoView({behavior:'smooth'})">Abrir meu livrinho 💗</button>
+  </section>
+  <div class="layout">
+    <aside class="side">
+      <h3>♡ Navegar</h3>
+      <button class="active" onclick="document.getElementById('inicio').scrollIntoView({behavior:'smooth'})">⌂ Início</button>
+      <button onclick="document.getElementById('gostos').scrollIntoView({behavior:'smooth'})">♡ Meus 20 gostos</button>
+      <button onclick="document.getElementById('poemas').scrollIntoView({behavior:'smooth'})">✎ Poemas</button>
+      <button onclick="document.getElementById('livro-milena').scrollIntoView({behavior:'smooth'})">♡ Livro para Milena</button>
+      <button onclick="document.getElementById('mensagem').scrollIntoView({behavior:'smooth'})">✉ Mensagem especial</button>
+      <div class="note">“As pequenas coisas que você ama também são especiais para mim.”</div>
+    </aside>
+    <main class="main" id="inicio">
+      <div class="section-head" id="gostos"><h2>Meus 20 gostos 🌷</h2><span class="tiny">toque em um cartão</span></div>
+      <div class="grid" id="cards"></div>
+    </main>
+  </div>
+
+  <section class="main" id="poemas" style="margin-top:20px">
+    <div class="section-head"><h2>Poemas 🌷</h2><span class="tiny">palavras guardadas para você</span></div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr))">
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">💗</div>
+        <div class="card-label">Milena</div>
+        <p style="line-height:1.7;text-align:center;white-space:normal">Assim que eu vi você<br>
+        Logo me comuniquei<br>
+        E aí, fizemos uma amizade<br>
+        Que eu nunca imaginei<br><br>
+        Você conheceu meus lados<br>
+        E falava só ok<br>
+        Mas logo vi algo diferente<br>
+        Seus olhos eram como uma estrela cadente<br><br>
+        E também havia um fogo ardente<br>
+        E um sorriso que me prendia<br>
+        Era uma coisa que eu ficava contente</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">💞</div>
+        <div class="card-label">Milena 2</div>
+        <p style="line-height:1.7;text-align:center;white-space:normal">Achei que era até dor<br>
+        Mas vi que era amor<br>
+        E aí, esse dia chegou<br>
+        E eu até fiquei com tremor<br><br>
+        Pensei que ia pegar um fora<br>
+        E sair como um perdedor<br>
+        Mas aí dei sorte<br>
+        E saí um vencedor<br><br>
+        Aí tudo começou<br>
+        E logo você gostou<br>
+        E eu também, meu amor</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">💝</div>
+        <div class="card-label">Milena 3</div>
+        <p style="line-height:1.7;text-align:center;white-space:normal">E aí, tivemos um contratempo<br>
+        E ficamos sem nós mesmos<br>
+        Mas aí, você tá aqui de novo<br>
+        E eu queria que fosse como um renovo<br><br>
+        Pra gente começar do zero<br>
+        Porque eu te amo e super te quero<br>
+        Eu sei que pode não significar nada<br>
+        Mas eu digo isso como um louco<br>
+        Por você, vivo ou morro<br>
+        Aposto tudo, já que tenho só você<br>
+        Como alguém especial com quem quero viver</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">👑</div>
+        <div class="card-label">Princesinha</div>
+        <p style="line-height:1.7;text-align:center">Você é minha princesinha<br>E eu nem sei como explicar<br>Quando você ri pra mim<br>Eu fico sem saber o que falar</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">📶</div>
+        <div class="card-label">Sem internet</div>
+        <p style="line-height:1.7;text-align:center">Fiquei sem internet um dia<br>E voltei no seu mundo sem querer<br>Parece coisa de filme, né?<br>Mas foi o destino, pode crer</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">🌙</div>
+        <div class="card-label">Madrugada</div>
+        <p style="line-height:1.7;text-align:center">A gente virou a madrugada<br>Jogando e rindo sem parar<br>Nem vi a hora passar<br>Eu só queria te escutar</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">🥤</div>
+        <div class="card-label">Minha branquela</div>
+        <p style="line-height:1.7;text-align:center">Minha branquela, meu neném<br>Com Pepsi gelada na mão<br>Se você tá feliz, eu tô bem<br>E isso é de coração</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">🌸</div>
+        <div class="card-label">Seu jeito de florescer</div>
+        <p style="line-height:1.7;text-align:center">Milena, há beleza no seu jeito de ser,<br>nas pequenas coisas que você faz,<br>no seu sorriso que chega sem avisar<br>e deixa o meu mundo mais em paz.</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">💗</div>
+        <div class="card-label">Amor que escolhe ficar</div>
+        <p style="line-height:1.7;text-align:center">Que o carinho seja de ida e volta,<br>que o cuidado nunca falte entre nós,<br>e que mesmo nos dias mais comuns<br>eu ainda encontre alegria na sua voz.</p>
+      </article>
+      <article class="card" style="padding:18px">
+        <div class="art" style="height:76px">🌙</div>
+        <div class="card-label">Um cantinho no meu coração</div>
+        <p style="line-height:1.7;text-align:center">Guardei um cantinho feito de carinho,<br>com flores, sonhos e serenidade.<br>Ele tem seu nome, Milena,<br>e é cheio de sinceridade.</p>
+      </article>
+    </div>
+  </section>
+  <section class="main" id="livro-milena" style="margin-top:20px">
+    <div class="section-head"><h2>Livro para minha amada e querida Milena ♡</h2><span class="tiny">uma dedicatória em páginas</span></div>
+    <div style="max-width:720px;margin:auto;background:linear-gradient(135deg,#fffafd,#ffe7f1);border:1px solid #efb0ca;border-radius:22px;padding:clamp(20px,5vw,42px);box-shadow:inset 0 0 0 7px #fff7fb;text-align:center">
+      <div class="pg on"><div style="font-size:2.5rem">🎀</div><div class="kicker">dedicado com carinho</div><h2 style="font-size:clamp(1.8rem,5vw,2.8rem);color:#b84c80;margin:12px 0">Para minha amada e querida Milena</h2><p class="tiny">vire a página →</p></div>
+      <div class="pg l"><p><em>Olá, minha querida, minha futura esposa e amada Milena.</em></p><p>Aqui eu vou contar tudo. Um desabafo lindo e maravilhoso. Quero muito que você leia isso e guarde como um pedacinho de mim.</p><p>Como vou começar? Hmm... Eu te amo. Te amo muito mesmo.<br>Eu amo tanto você, minha princesinha.</p></div>
+      <div class="pg l"><p>Tudo isso começou em um mero joguinho. Mas que engraçado, né? Eu fiquei sem internet e entrei no seu mundo de novo. Realmente era pra acontecer, né? Que incrível, lindo e maravilhoso isso, né?</p><p>A gente conversou muito, se aproximou demais. Eu era um garoto traumatizado, porque só pensava na minha ex, enjoava das outras garotas, porque só queria saber dela. Mas alguém me curou disso: você.</p></div>
+      <div class="pg l"><p>Me apaixonei por você de verdade e fiquei mais de 1 ano com você. Nossos momentos juntos no Roblox, no Discord, no Minecraft e no WhatsApp. Sua mãe pegou seu celular e viu nossas conversas. Ainda bem que naquela época a gente era só inocência. Você aprendeu bastante coisa comigo, rs, e eu também aprendi bastante coisa com você. Passei muito tempo grudado com você, e eu só tenho a te agradecer.</p></div>
+      <div class="pg l"><p>Lembra de quando você me deu parabéns no meu aniversário e colocou até fotinha minha? Eu me lembro.<br>Lembra quando entrei naquele joguinho de construir barco e fiz umas construções pro seu aniversário? Eu também fiz isso pra você no Minecraft, cheio de flores e mensagem. Lembra?<br>Lembro que a gente virou uma madrugada jogando e conversando. Lembra? Eu lembro de tudo, tudo mesmo, porque não consigo esquecer. Você é especial. Eu queria muito estar ao seu lado, mas a gente teve que ficar assim, um longe do outro, pra gerar um desafio e enfrentar as dificuldades. E aí, acabei falhando miseravelmente com você. Me perdoa.</p></div>
+      <div class="pg l"><p>Só que eu gosto de você demais pra deixar tudo do jeito que está, acabar simplesmente do nada. Me perdoa por ser chatão ou mimizento por sempre querer tudo. Estou tentando ser alguém melhor, pra ser sua fortaleza, alguém que você possa confiar e admirar tanto como o seu homem.</p><p>Eu fico chateado às vezes com algumas coisinhas nossas, mas eu procuro esquecer, porque não quero te perder.</p></div>
+      <div class="pg l"><p>É isso. Meu melhor e maior presente pra você é esse site. Pode parecer algo simples, mas me dediquei pra isso. E eu posso fazer alterações quando eu quiser nele, então quando você menos ver, boom, botei algo novo nele, kkkkkk. Te amo muito, minha branquela. Estou sendo um novo homem, para que você possa se jogar em mim, confiar e estar segura.</p><p>E é isso. Muito obrigado, neném, coração ❤️❤️</p></div>
+      <div class="navrow"><button class="pill" onclick="pg(-1)">← Anterior</button><span class="tiny" id="pgn" style="align-self:center">1 / 7</span><button class="primary" onclick="pg(1)">Próxima →</button></div>
+    </div>
+  </section>
+
+  <section class="footer" id="mensagem">
+    <div style="font-size:2rem">🎀 💗 🌷</div>
+    <div class="kicker">uma mensagem para você</div>
+    <strong>Você faz parte do meu mundo.</strong>
+    <p>Eu quis juntar aqui algumas das coisas que você gosta, porque prestar atenção nos seus detalhes também é uma forma de carinho. Espero que esse pequeno presente faça você sorrir. ♡</p>
+    <div class="tiny">feito com carinho, só para você</div>
+  </section>
+</div>
+<nav class="mnav"><a href="#gostos"><span>♡</span>Gostos</a><a href="#poemas"><span>✎</span>Poemas</a><a href="#livro-milena"><span>📖</span>Livro</a><a href="#mensagem"><span>✉</span>Mensagem</a></nav>
+<div class="modal" id="modal" onclick="if(event.target===this)fechar()">
+ <div class="dialog"><button class="close" onclick="fechar()">×</button><div class="big" id="mEmoji"></div><h2 id="mTitle"></h2><div id="mImage"></div><p id="mText"></p><div class="navrow"><button class="pill" onclick="mover(-1)">← Anterior</button><button class="primary" onclick="mover(1)">Próximo →</button></div></div>
+</div>
+<script>
+const gostos = [
+["Pepsi","🥤","Uma Pepsi bem geladinha, do jeitinho que você gosta.",""],
+["Jogar Roblox","🎮","Que nunca faltem diversão, aventuras e momentos felizes no seu jogo favorito.",""],
+["Comer doces","🍓","Um docinho para deixar o dia ainda mais doce.",""],
+["Cuidar dos cachinhos","🎀","Seus cachinhos merecem todo carinho do mundo.",""],
+["Sair com as amigas","👯‍♀️","Que você tenha muitos momentos leves, risadas e histórias com suas amigas.",""],
+["Rir","😊","Seu sorriso merece aparecer todos os dias.",""],
+["Dormir até a hora que quiser","🌙","Que você sempre tenha um tempinho para descansar sem pressa.",""],
+["Séries românticas — Bridgerton","🌹","Um pouquinho de romance, do jeitinho que você gosta.",""],
+["Série criminal — CSI","🔎","Mistérios, investigação e aquela curiosidade que não acaba.",""],
+["Estudar criminologia","📚","Uma mente curiosa, cheia de perguntas e vontade de descobrir.",""],
+["Pessoas educadas","🤍","Gentileza e respeito fazem toda a diferença.",""],
+["Música","🎧","Que sempre exista uma música para cada sentimento seu.",""],
+["Natureza","🌿","A beleza das coisas simples, das flores e da tranquilidade.",""],
+["Agradar","🎁","Seu carinho aparece nos pequenos gestos que fazem os outros felizes.",""],
+["Amor recíproco","💞","Um amor em que os dois cuidam, respeitam e escolhem ficar.",""],
+["Arrumar skin no Roblox","👗","Criar combinações e deixar cada avatar com a sua personalidade.",""],
+["Sua gatinha","🐱","Um carinho especial para sua companheirinha.","","assets/gatinha.jpg"],
+["Sua calopsita","🐦","Uma fofurinha que faz parte do seu mundinho.","","assets/calopsita.jpg"],
+["Seu papagaio","🦜","Mais um companheirinho especial da família.","","assets/papagaio.jpg"],
+["Sua cachorrinha","🐾","Uma salsichinha muito especial, com seu jeitinho único.","","assets/cachorrinha-original.jpg"]
+];
+let atual=0;
+const cards=document.getElementById('cards');
+gostos.forEach((g,i)=>{
+ const b=document.createElement('div');b.className='card';
+ const art=g[4]?`<div class="art"><img src="${g[4]}" alt="${g[0]}"></div>`:`<div class="art">${g[1]}</div>`;
+ b.innerHTML=`<button onclick="abrir(${i})">${art}<div class="card-label">${String(i+1).padStart(2,'0')} · ${g[0]}</div></button>`;
+ cards.appendChild(b);
+});
+function abrir(i){atual=i;renderModal();document.getElementById('modal').classList.add('open')}
+function fechar(){document.getElementById('modal').classList.remove('open')}
+function mover(n){atual=(atual+n+gostos.length)%gostos.length;renderModal()}
+function renderModal(){let g=gostos[atual];document.getElementById('mEmoji').textContent=g[1];document.getElementById('mTitle').textContent=g[0];document.getElementById('mText').textContent=g[2];document.getElementById('mImage').innerHTML=g[4]?`<img src="${g[4]}" alt="${g[0]}">`:''}
+let pa=0;function pg(n){const a=document.querySelectorAll('.pg');pa=(pa+n+a.length)%a.length;a.forEach((e,i)=>e.classList.toggle('on',i===pa));document.getElementById('pgn').textContent=(pa+1)+' / '+a.length}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fechar();if(e.key==='ArrowRight')mover(1);if(e.key==='ArrowLeft')mover(-1)});
+</script>
+</body></html>
